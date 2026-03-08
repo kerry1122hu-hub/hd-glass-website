@@ -167,6 +167,19 @@ h2 em { color: var(--gold); font-style: normal; }
 .check-list li { padding-left: 1.5rem; position: relative; color: var(--text-m); font-size: 0.95rem; }
 .check-list li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
 
+/* ---- FEATURED PRODUCT ---- */
+.featured-product { background: var(--cream); }
+.fp-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.fp-img img {
+  width: 100%; border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+.fp-text h2 { margin-bottom: 1.2rem; }
+.fp-text p  { color: var(--text-m); margin-bottom: 1rem; }
+@media (max-width: 900px) {
+  .fp-inner { grid-template-columns: 1fr; gap: 2rem; }
+}
+
 /* ---- FACTORY GALLERY ---- */
 .factory-stats-row {
   display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;
